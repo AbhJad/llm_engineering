@@ -1,0 +1,38 @@
+First, let's check which remote repository you're connected to:
+
+git remote -v
+
+Run this command and let me know what URL it shows. This will tell us if you're still connected to the original repository you cloned or your own repository.
+Output is -
+
+C:\Users\Dell\OneDrive\learning_2025\llm_engineering\llm_engineering>git remote -v
+origin  https://github.com/ed-donner/llm_engineering.git (fetch)
+origin  https://github.com/ed-donner/llm_engineering.git (push)
+
+If you want to switch to your own repository:
+
+# Remove the current remote
+git remote remove origin
+
+# Add your new repository as remote (replace with your GitHub repository URL)
+git remote add origin https://github.com/your-username/your-repository-name.git
+
+
+
+
+Then you can add and push your changes:
+
+# Add your modified notebooks
+git add week2/day1.ipynb week2/day2.ipynb week2/day3.ipynb
+
+# Add your text file
+git add "Commands to Update the Jupyter notebook.txt"
+
+# Commit the changes
+git commit -m "Updated week 2 notebooks with my changes"
+
+# Push to your repository
+git push -u origin main
+
+
+https://github.com/AbhJad/llm_engineering

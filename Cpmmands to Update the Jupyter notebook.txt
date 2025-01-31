@@ -1,0 +1,4 @@
+To make text larger, use heading formatting:
+# for the largest heading (# Your Text).
+## for a slightly smaller heading.
+### for an even smaller heading.
